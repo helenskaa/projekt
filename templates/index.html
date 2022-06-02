@@ -1,0 +1,23 @@
+<!-- html Seite für die Home Seite -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz-World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='my_style.css') }}">
+</head>
+
+{% extends 'basis.html' %}
+
+{% block content %}
+
+    <body>
+    <h1>Herzlich Willkommen bei Quiz-World!</h1>
+    <a>Drücke auf Start, um das Spiel zu beginnen.</a>
+    <a href="{{ url_for('start') }}">Start</a>
+    </body>
+
+{% endblock %}
+
+</html>

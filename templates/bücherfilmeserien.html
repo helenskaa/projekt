@@ -1,0 +1,71 @@
+<!-- html Seite um die Bücher, Filme & TV-Serien Quiz Seite zu gestalten. -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Bücher, Filme & TV-Serien Quiz</title>
+</head>
+
+{% extends 'basis.html' %}
+
+{% block content %}
+
+<body>
+    <div class="container">
+        <!-- Start Knopf -->
+        <div id="start_screen" class="jumbotron quiz_start" >
+            <h1>Herzlich Willkommen beim Bücher, Filme & TV-Serien Quiz!</h1>
+            <p>Das Quiz startet sofort...</p>
+            <p><button id="start_btn" class="btn btn-primary btn-lg" role="button">Jetzt starten</button></p>
+        </div>
+        <!-- Quiz zu Ende, Punkte werden angezeigt und man hat die möglichkeit neu zu starten. -->
+        <div id="over" class="jumbotron quiz_end" hidden>
+            <h1>Quiz Vorbei!</h1>
+            <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
+            <p><button class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
+        </div>
+        <!-- Frage -->
+        <div id="question" class="jumbotron" hidden>
+            <h2>Frage <span id="qno">1</span></h2>
+            <p id="question_text">Was macht man mit einer Programmiersprache?<p/>
+            <!-- Frage Layout -->
+            <div class="row">
+                <!-- Antwortmöglichkeit A -->
+                <div class="col-md-6">
+                    <p><button id="answer_a_btn" class="answer btn btn-default btn-lg btn-block" role="button">
+                        A: <span id="answer_a">Wandern</span></button></p>
+                </div>
+                <!-- Antwortmöglichkeit C -->
+                <div class="col-md-6">
+                    <p><button id="answer_c_btn" class="answer btn btn-default btn-lg btn-block" role="button">C: <span id="answer_c">Programmieren</span></button></p>
+                </div>
+            </div>
+
+            <!-- Antwortmöglichkeit B und D -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p><button id="answer_b_btn" class="answer btn btn-default btn-lg btn-block" role="button">B: <span id="answer_b">Kochen</span></button></p>
+                </div>
+                <div class="col-md-6">
+                   <p><button id="answer_d_btn" class="answer btn btn-default btn-lg btn-block" role="button">D: <span id="answer_d">Zeichnen</span></button></p>
+                </div>
+            </div>
+            <!-- Antwort abschicken Layout -->
+            <div class="row">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                    <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-block" role="button"><span id="commit_text">Antworten</span></button></p>
+                    <p><button id="continue_btn" class="btn btn-primary btn-lg btn-block" role="button" hidden><span>Weiter</span></button></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+{% endblock %}
+
+</html>
