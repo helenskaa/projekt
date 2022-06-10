@@ -1,0 +1,32 @@
+[
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Wie viele Laender grenzen an Ungarn?",
+        "A":"7",
+        "B":"6",
+        "C":"8",
+        "D":"5",
+        "richtigeAntwort":"7",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Welcher US-Bundesstaat hat keine Kueste?",
+        "A":"Maine",
+        "B":"Alabama",
+        "C":"Virginia",
+        "D":"Tennessee",
+        "richtigeAntwort":"Tennessee",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Welcher dieser spanischen Inseln ist die groesste?",
+        "A":"Isla de Lobos",
+        "B":"Isla Dragonera",
+        "C":"Alegraza",
+        "D":"Isla de la Toja",
+        "richtigeAntwort":"Alegraza",
+        "punkte":0
+    }
+]
