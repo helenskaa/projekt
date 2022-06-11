@@ -28,5 +28,425 @@
         "D":"Isla de la Toja",
         "richtigeAntwort":"Alegraza",
         "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Zwischen welchen Staedten ist die Luftlinie am kuerzesten?",
+        "A":"Sydney - Auckland",
+        "B":"Buenos Aires - Santiago de Chile",
+        "C":"Berlin - Moskau",
+        "D":"Durban - Antananarivo",
+        "richtigeAntwort":"Buenos Aires - Santiago de Chile",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"In welchem Land liegt der groesste See des Kaukasus?",
+        "A":"Georgien",
+        "B":"Russland",
+        "C":"Aserbaidschan",
+        "D":"Armenien",
+        "richtigeAntwort":"Armenien",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Welche dieser Staedte ist keine Hauptstadt?",
+        "A":"Maskat",
+        "B":"Malobo",
+        "C":"Monrovia",
+        "D":"Mombasa",
+        "richtigeAntwort":"Mombasa",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Wie viele Ozeane gibt es?",
+        "A":"3",
+        "B":"5",
+        "C":"7",
+        "D":"9",
+        "richtigeAntwort":"5",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Welches Gebirge liegt zwischen Europa und Asien?",
+        "A":"Pyrenaeen",
+        "B":"Alpen",
+        "C":"Ural",
+        "D":"Anden",
+        "richtigeAntwort":"Ural",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Wo befindet sich der Kilimandscharo?",
+        "A":"Ostafrika",
+        "B":"Nordamerika",
+        "C":"Nordafrika",
+        "D":"Suedamerika",
+        "richtigeAntwort":"Ostafrika",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Wo liegt Mekka, der Zentrale Wallfahrtsort des Islams?",
+        "A":"Kuwait",
+        "B":"Saudi Arabien",
+        "C":"Oman",
+        "D":"Vereinigte Arabische Emirate",
+        "richtigeAntwort":"Vereinigte Arabische Emirate",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Jerusalem ist die Hauptstadt des heutigen?",
+        "A":"Jordanien",
+        "B":"Syrien",
+        "C":"Israel",
+        "D":"Jemen",
+        "richtigeAntwort":"Israel",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"In welches Meer muendet der Nil?",
+        "A":"Schwarzes Meer",
+        "B":"Atlantik",
+        "C":"Totes Meer",
+        "D":"Mittelmeer",
+        "richtigeAntwort":"Mittelmeer",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Welche Stadt der Welt hat am meisten Einwohner?",
+        "A":"Tokio",
+        "B":"Jakarta",
+        "C":"Mumbai",
+        "D":"Dehli",
+        "richtigeAntwort":"Tokio",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Wie heisst die Hauptstadt Australiens?",
+        "A":"Sydney",
+        "B":"Canberra",
+        "C":"Melbourne",
+        "D":"Quebec",
+        "richtigeAntwort":"Canberra",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Geographie",
+        "Frage":"Welches ist die groesste Wueste der Welt?",
+        "A":"Sahara",
+        "B":"Danakil-Somalia",
+        "C":"Antarktis",
+        "D":"Nubische Wueste",
+        "richtigeAntwort":"Antarktis",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Wo ist die Mona Lisa ausgestellt?",
+        "A":"Metropolitan Museum of Art, New York",
+        "B":"Das Vatikanische Museum, Italien",
+        "C":"Louvre, Paris",
+        "D":"Uffizien-Galerie, Italien",
+        "richtigeAntwort":"Louvre, Paris",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Welcher der folgenden wir nicht als Standard-Tanz klassifiziert?",
+        "A":"Walzer",
+        "B":"Tango",
+        "C":"Quickstep",
+        "D":"Ballett",
+        "richtigeAntwort":"Ballett",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"In welcher Stadt spielt Romeo und Julia?",
+        "A":"Edinburgh",
+        "B":"Glasgow",
+        "C":"Verona",
+        "D":"Florenz",
+        "richtigeAntwort":"Verona",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"'Der Schrei' wurde gemalt von?",
+        "A":"Wes Craven",
+        "B":"Edvard Munch",
+        "C":"Vincent van Gogh",
+        "D":"Claude Monet",
+        "richtigeAntwort":"Edvard Munch",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Wann lebte William Shakespeare?",
+        "A":"Im 16. bis 17. Jahrhundert",
+        "B":"Im 13. bis 14. Jahrhundert",
+        "C":"Im 18. Jahrhundert",
+        "D":"Im 17. bis 18. Jahrhundert",
+        "richtigeAntwort":"Im 16. bis 17. Jahrhundert",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Welcher der folgenden Kuenstler ist kein Vertreter des Impressionismus?",
+        "A":"Claude Monet",
+        "B":"Pierre-Auguste Renoir",
+        "C":"Andy Warhol",
+        "D":"Camille Pissarro",
+        "richtigeAntwort":"Andy Warhol",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Welcher Musiker hat weltweit die meisten Tontraeger verkauft?",
+        "A":"Michael Jackson",
+        "B":"Elvis Presley",
+        "C":"Madonna",
+        "D":"Elton John",
+        "richtigeAntwort":"Elvis Presley",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Welcher Dichter sagt: 'Es muss von Herzen kommen, was auf Herzen wirken soll.'",
+        "A":"Johann Wolfgang von Goethe",
+        "B":"Friedrich Schiller",
+        "C":"Gotthold Ephraim Lessing",
+        "D":"Heinrich Heine",
+        "richtigeAntwort":"Johann Wolfgang von Goethe",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Welcher dieser Modeschoepfer stammt nicht aus Deutschland?",
+        "A":"Michael Michalsky",
+        "B":"Jil Sander",
+        "C":"Wolfgang Joop",
+        "D":"Tom Ford",
+        "richtigeAntwort":"Tom Ford",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Welcher Schriftsteller gewann keinen Literaturnobelpreis?",
+        "A":"Hermann Hesse",
+        "B":"Herta Mueller",
+        "C":"Franz Kafka",
+        "D":"Thomas Mann",
+        "richtigeAntwort":"Franz Kafka",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Was zeigt das Gemaelde 'Guernica' von Pablo Picasso?",
+        "A":"Sonnenfinsternis",
+        "B":"Bombardierung",
+        "C":"Mondfinsternis",
+        "D":"Waldbrand",
+        "richtigeAntwort":"Bombardierung",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Was ist bei Klassik-Freunden sehr bekannt?",
+        "A":"Teatro Real in Madrid",
+        "B":"Opera Arsenal in London",
+        "C":"Concerthall Ajax in Amsterdam",
+        "D":"Filarmonica AC in Milano",
+        "richtigeAntwort":"Teatro Real in Madrid",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Was wurde 2017 von der UNESCO als Kulturerbe der Menschheit anerkannt?",
+        "A":"Coq au Von Chanson",
+        "B":"Pizza und Orgelmusik",
+        "C":"Souflaki und Shanty",
+        "D":"Paella und Schlager",
+        "richtigeAntwort":"Pizza und Orgelmusik",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"In welcher Werkstatt wurde Leonardo da Vinci zum Maler und Bildhauer ausgebildet?",
+        "A":"A del Verrocchios",
+        "B":"A del Florentino",
+        "C":"A del Ludovico",
+        "D":"A del Sforza",
+        "richtigeAntwort":"A del Verrocchios",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Kunst und Kultur",
+        "Frage":"Aus wie vielen Figuren besteht Rodins Skulptur 'Die Buerger von Calais'?",
+        "A":"5",
+        "B":"8",
+        "C":"7",
+        "D":"6",
+        "richtigeAntwort":"6",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Wie viele Oscars gewann der Film 'Titanic'?",
+        "A":"9",
+        "B":"7",
+        "C":"11",
+        "D":"15",
+        "richtigeAntwort":"11",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Was ist das meistverkaufte Buch aller Zeiten?",
+        "A":"Der Herr der Ringe",
+        "B":"Harry Potter und der Stein der Weisen",
+        "C":"Der kleine Prinz",
+        "D":"Bibel",
+        "richtigeAntwort":"Bibel",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Welcher dieser Schauspieler hat noch keinen Oscar gewonnen?",
+        "A":"Brad Pitt",
+        "B":"Audrey Hepburn",
+        "C":"Johnny Depp",
+        "D":"Reese Witherspoon",
+        "richtigeAntwort":"Johnny Depp",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Wie viele Harry Potter Buecher gibt es?",
+        "A":"6",
+        "B":"8",
+        "C":"7",
+        "D":"10",
+        "richtigeAntwort":"7",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Welches Jahr gilt als die Geburtsstunde des Films?",
+        "A":"1900",
+        "B":"1912",
+        "C":"1895",
+        "D":"1889",
+        "richtigeAntwort":"1895",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Filme entstehen oft in grossen Filmstudios oder auch Filmateliers. Welches war das weltweit erste grosse Filmstudio?",
+        "A":"Filmstudios Barrandov",
+        "B":"Studio Babelsberg",
+        "C":"Universal Studios",
+        "D":"Cinecitta",
+        "richtigeAntwort":"Studio Babelsberg",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Wie lange geht der laengste Film der Welt?",
+        "A":"14h 33min",
+        "B":"87h",
+        "C":"248h",
+        "D":"720h",
+        "richtigeAntwort":"270h",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Wie lange dauert der kuerzeste Film der Welt?",
+        "A":"2min",
+        "B":"15min",
+        "C":"45s",
+        "D":"1s",
+        "richtigeAntwort":"1s",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Welcher dieser Regisseure taucht in vielen seiner Filme selbst kurz auf?",
+        "A":"Steven Spielberg",
+        "B":"Alfred Hitchcock",
+        "C":"Wim Wenders",
+        "D":"Tom Tykwer",
+        "richtigeAntwort":"Alfred Hitchcock",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Wieso etabliert sich das Popcorn als beliebter Snack zur Zeit der 'Grossen Depression' in US-Amerikanischen Kinos?",
+        "A":"Weil es schnell satt machte",
+        "B":"Erst dann gab es Popcorn-Maschinen speziell fuers Kino",
+        "C":"Weil Popcorn als besonders leise Snackvariante galt",
+        "D":"Kinos konnten mit dem Popcorn-Verkauf die Krise ueberstehen",
+        "richtigeAntwort":"Kinos konnten mit dem Popcorn-Verkauf die Krise ueberstehen",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Kaum eine Serie kommt ohne einen Cliffhanger aus. Was ist ein Cliffhanger?",
+        "A":"Ein Zeitsprung",
+        "B":"Eine Jubilaeums-Folge",
+        "C":"Ein besonders spannendes Momentum am Ende einer Folge",
+        "D":"Ein Gastauftritt einer sehr bekannten Persoenlichkeit",
+        "richtigeAntwort":"Ein besonders spannendes Momentum am Ende einer Folge",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Welcher dieser Streaming-Dienste war im Jahr 2020 laut einer Studie der beliebteste?",
+        "A":"Amazon Prime Video",
+        "B":"Disney+",
+        "C":"Netflix",
+        "D":"Sky",
+        "richtigeAntwort":"Netflix",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Im Mai 2021 feiert die beliebte Sitcom 'Friends' eine Mini-Reunion. Welcher dieser Serien-Stars hatte bei Friends eine Gastrolle?",
+        "A":"Tom Selleck",
+        "B":"Claire Danes",
+        "C":"Sarah Jessica Parker",
+        "D":"Charlie Sheen",
+        "richtigeAntwort":"Tom Selleck",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Was meint 'Binge Watching' oder 'Binge'?",
+        "A":"Eine Serie mindestens zwei Mal gesehen zu haben",
+        "B":"Eine Serie nach der ersten Folge zu beenden",
+        "C":"Zu einer Serie parallel die Original Buecher zu lesen",
+        "D":"Das exzessive Schauen mehrerer Episoden einer Serie",
+        "richtigeAntwort":"Das exzessive Schauen mehrerer Episoden einer Serie",
+        "punkte":0
+    },
+    {
+        "Kategorie":"Buecher, Filme und Serien",
+        "Frage":"Wann kam der Film 'Harry Potter und der Stein der Weisen' raus?",
+        "A":"1997",
+        "B":"1995",
+        "C":"1999",
+        "D":"2001",
+        "richtigeAntwort":"2001",
+        "punkte":0
     }
 ]
