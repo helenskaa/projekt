@@ -14,6 +14,10 @@ def home():
 
 @app.route("/start", methods=["GET", "POST"])
 def start():
+# Kategorie Auswahl erstellt, global damit die Variable auf allen Seiten funktioniert.
+    if request.method == "POST":
+        global kategorie_input
+        kategorie_input = request.form["kategorie"]
 
     return render_template("start.html")
 
