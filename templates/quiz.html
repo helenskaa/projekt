@@ -12,7 +12,20 @@
 {% block content %}
 
 <body>
-
+<h1>{{ kategorie }}</h1>
+<form method="POST">
+{% for element in liste_fragen %}
+<label for="{{ element[0] }}">{{ element[0] }}</label>
+        <select name="{{ element[0]}}" id="{{ element[0] }}">
+            <option>{{ element[1] }}</option>
+            <option>{{ element[2] }}</option>
+            <option>{{ element[3] }}</option>
+            <option>{{ element[4] }}</option>
+        </select> <br><br>
+{% endfor %}
+<button type="submit">Antworten eintragen</button>
+</form>
+<a href="{{ url_for('auswertung') }}" class="btn btn-primary">Auswertung anzeigen</a>
 </body>
 
 {% endblock %}

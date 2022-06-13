@@ -23,6 +23,7 @@ def start():
 
 @app.route("/quiz", methods=["GET", "POST"])
 def quiz():
+    liste_fragen = []
 
     try:
         q = open("datenbank.json")
@@ -31,12 +32,14 @@ def quiz():
         quizdatenbank = []
 
     for element in quizdatenbank:
-        print(element)
+        if element["Kategorie"] == kategorie_input:
+            liste_fragen.append([element["Frage"], element["A"], element["B"], element["C"], element["D"]])
+
 
     with open("datenbank.json", "w") as d:
         json.dump(quizdatenbank, d, indent=4, separators=(",", ":"))
 
-    return render_template("quiz.html")
+    return render_template("quiz.html", liste_fragen=liste_fragen)
 
 @app.route("/auswertung", methods=["GET", "POST"])
 def auswertung():
