@@ -35,6 +35,11 @@ def quiz():
         if element["Kategorie"] == kategorie_input:
             liste_fragen.append([element["Frage"], element["A"], element["B"], element["C"], element["D"]])
 
+# Wenn Frage richtig beantwortet wurde, wird ein Punkt hinzugefügt. POST --> Wenn Knopf 'Antworten eintragen' gedrückt wird am Ende des Quiz
+    if request.method == "POST":
+        for element in quizdatenbank:
+            if request.form[element["Frage"]] == element["richtigeAntwort"]:
+                element["punkte"] = 1
 
     with open("datenbank.json", "w") as d:
         json.dump(quizdatenbank, d, indent=4, separators=(",", ":"))
