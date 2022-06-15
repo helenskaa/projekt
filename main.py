@@ -38,8 +38,8 @@ def quiz():
 # Wenn Frage richtig beantwortet wurde, wird ein Punkt hinzugefügt. POST --> Wenn Knopf 'Antworten eintragen' gedrückt wird am Ende des Quiz
     if request.method == "POST":
         for element in quizdatenbank:
-            if request.form[element["Frage"]] == element["richtigeAntwort"]:
-                element["punkte"] = 1
+            if element["Kategorie"] == kategorie_input:
+                if request.form[element["Frage"]] == element["richtigeAntwort"]:                    element["punkte"] = 1
 
     with open("datenbank.json", "w") as d:
         json.dump(quizdatenbank, d, indent=4, separators=(",", ":"))
@@ -48,8 +48,19 @@ def quiz():
 
 @app.route("/auswertung", methods=["GET", "POST"])
 def auswertung():
+    liste_auswertung = []
+    try:
+        q = open("datenbank.json")
+        quizdatenbank = json.load(q)
+    except FileNotFoundError:
+        quizdatenbank = []
 
-    return render_template("auswertung.html")
+
+    for element in quizdatenbank:
+        if element["Kategorie"] == kategorie_input:
+            liste_auswertung.append(element)
+
+    return render_template("auswertung.html", liste_auswertung=liste_auswertung)
 
 
 if __name__ == "__main__":
