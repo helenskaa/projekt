@@ -7,7 +7,7 @@
         "C":"8",
         "D":"5",
         "richtigeAntwort":"7",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -87,7 +87,7 @@
         "C":"Nordafrika",
         "D":"Suedamerika",
         "richtigeAntwort":"Ostafrika",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -127,7 +127,7 @@
         "C":"Mumbai",
         "D":"Dehli",
         "richtigeAntwort":"Tokio",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",

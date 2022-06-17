@@ -48,6 +48,10 @@ def quiz():
 
 @app.route("/auswertung", methods=["GET", "POST"])
 def auswertung():
+    punkte = 0
+    maximalpunkte = 0
+    richtige_fragen = []
+    falsche_fragen = []
     liste_auswertung = []
     try:
         q = open("datenbank.json")
@@ -55,12 +59,17 @@ def auswertung():
     except FileNotFoundError:
         quizdatenbank = []
 
-
+# Wenn Frage richtig beantwortet wurde, wird es in der Liste richtige_fragen angezeigt und wenn falsch wird es der falsche_fragen Liste hinzugefügt
     for element in quizdatenbank:
         if element["Kategorie"] == kategorie_input:
-            liste_auswertung.append(element)
+            punkte = punkte + element["punkte"]
+            if element["punkte"] == 1:
+                richtige_fragen.append(element["Frage"])
+            else:
+                falsche_fragen.append([element["Frage"], element["richtigeAntwort"]])
+            maximalpunkte = maximalpunkte + 1
 
-    return render_template("auswertung.html", liste_auswertung=liste_auswertung)
+    return render_template("auswertung.html", punkte=punkte, maximalpunkte=maximalpunkte, falsche_fragen=falsche_fragen, richtige_fragen=richtige_fragen)
 
 
 if __name__ == "__main__":

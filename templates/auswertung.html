@@ -12,9 +12,27 @@
 {% block content %}
 
 <body>
-{% for element in liste_auswertung %}
-<p>element</p>
+<h2>Du hast {{ punkte }} von {{ maximalpunkte }} erreicht.</h2> <br><br>
+{% if richtige_fragen|length > 0 %}
+<h3>Folgende Fragen hast du richtig beantwortet:</h3> <br>
+{% for element in richtige_fragen %}
+<p>{{ element }}</p> <br>
 {% endfor %}
+{% endif %}
+<br><br>
+{% if falsche_fragen|length > 0 %}
+<h3>Folgende Fragen hast du falsch beantwortet:</h3>
+{% for element in falsche_fragen %}
+<p>{{ element[0] }}</p>
+<p>Die richtige Antwort wäre: {{ element[1] }}</p> <br>
+
+{% endfor %}
+{% endif %}
+
+<form method="POST">
+    <button type="submit">alle Daten zurücksetzen</button>
+    <a href="{{ url_for('start') }}"> quiz neu starten</a>
+</form>
 </body>
 
 {% endblock %}
