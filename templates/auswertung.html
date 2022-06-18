@@ -33,6 +33,22 @@
     <button type="submit">alle Daten zurücksetzen</button>
     <a href="{{ url_for('start') }}"> quiz neu starten</a>
 </form>
+<br><br>
+<h2>Quizhistorie:</h2>
+<table class="table m-5">
+  <tr>
+    <th>Name</th>
+    <th>Kategorie</th>
+    <th>Anzahl Punkte</th>
+  </tr>
+{% for element in quizhistorie_html %}
+  <tr>
+    <td>{{ element[0] }}</td>
+    <td>{{ element[1] }}</td>
+    <td>{{ element[2] }}</td>
+  </tr>
+{% endfor %}
+</table>
 </body>
 
 {% endblock %}

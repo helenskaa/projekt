@@ -14,10 +14,20 @@ def home():
 
 @app.route("/start", methods=["GET", "POST"])
 def start():
+    try:
+        h = open("quizhistorie.json")
+        quizhistorie = json.load(h)
+    except FileNotFoundError:
+        quizhistorie = []
+
 # Kategorie Auswahl erstellt, global damit die Variable auf allen Seiten funktioniert.
     if request.method == "POST":
         global kategorie_input
         kategorie_input = request.form["kategorie"]
+        quizhistorie.append({"Name": request.form["benutzername"], "Kategorie": kategorie_input, "Punkte": 0})
+
+    with open("quizhistorie.json", "w") as d:
+        json.dump(quizhistorie, d, indent=4, separators=(",", ":"))
 
     return render_template("start.html")
 
@@ -53,13 +63,20 @@ def auswertung():
     richtige_fragen = []
     falsche_fragen = []
     liste_auswertung = []
+    quizhistorie_html = []
     try:
         q = open("datenbank.json")
         quizdatenbank = json.load(q)
     except FileNotFoundError:
         quizdatenbank = []
 
-# Wenn Frage richtig beantwortet wurde, wird es in der Liste richtige_fragen angezeigt und wenn falsch wird es der falsche_fragen Liste hinzugefügt
+    try:
+        h = open("quizhistorie.json")
+        quizhistorie = json.load(h)
+    except FileNotFoundError:
+        quizhistorie = []
+
+    # Wenn Frage richtig beantwortet wurde, wird es in der Liste richtige_fragen angezeigt und wenn falsch wird es der falsche_fragen Liste hinzugefügt
     for element in quizdatenbank:
         if element["Kategorie"] == kategorie_input:
             punkte = punkte + element["punkte"]
@@ -69,7 +86,15 @@ def auswertung():
                 falsche_fragen.append([element["Frage"], element["richtigeAntwort"]])
             maximalpunkte = maximalpunkte + 1
 
-    return render_template("auswertung.html", punkte=punkte, maximalpunkte=maximalpunkte, falsche_fragen=falsche_fragen, richtige_fragen=richtige_fragen)
+    quizhistorie[-1]["Punkte"] = punkte
+
+    for element in quizhistorie:
+        quizhistorie_html.append([element["Name"], element["Kategorie"], element["Punkte"]])
+
+    with open("quizhistorie.json", "w") as d:
+        json.dump(quizhistorie, d, indent=4, separators=(",", ":"))
+
+    return render_template("auswertung.html", punkte=punkte, maximalpunkte=maximalpunkte, falsche_fragen=falsche_fragen, richtige_fragen=richtige_fragen, quizhistorie_html=quizhistorie_html)
 
 
 if __name__ == "__main__":
