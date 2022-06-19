@@ -1,10 +1,10 @@
-<!-- html Seite um die Kunst-Kultur Quiz Seite zu gestalten. -->
+<!-- html Seite für die Auswertung des Quizzes. -->
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Geografie Quiz</title>
+    <title>Auswertung</title>
 </head>
 
 {% extends 'basis.html' %}
@@ -12,7 +12,9 @@
 {% block content %}
 
 <body>
+<!-- Erreichte Punktezahl wird angezeigt -->
 <h2>Du hast {{ punkte }} von {{ maximalpunkte }} erreicht.</h2> <br><br>
+<!-- Codeblock für die richtig beantworteten Fragen. Es werden die Fragen angezeigt. -->
 {% if richtige_fragen|length > 0 %}
 <h3>Folgende Fragen hast du richtig beantwortet:</h3> <br>
 {% for element in richtige_fragen %}
@@ -20,6 +22,8 @@
 {% endfor %}
 {% endif %}
 <br><br>
+<!-- Codeblock für falsch beantworteten Fragen. Es werden die Fragen und die richtige Antwort angezeigt.
+Länge der Liste habe ich von https://stackoverflow.com/questions/1465249/get-lengths-of-a-list-in-a-jinja2-template -->
 {% if falsche_fragen|length > 0 %}
 <h3>Folgende Fragen hast du falsch beantwortet:</h3>
 {% for element in falsche_fragen %}
@@ -29,12 +33,14 @@
 {% endfor %}
 {% endif %}
 
+<!-- Damit Quiz neu gestartet werden kann, ein Knopf, der alle Daten zurücksetzt und noch den Knopf, der dich zurück auf die Startseite bringt. -->
 <form method="POST">
     <button type="submit">alle Daten zurücksetzen</button>
-    <a href="{{ url_for('start') }}"> quiz neu starten</a>
+    <a href="{{ url_for('start') }}"> Quiz neu starten</a>
 </form>
 <br><br>
 <h2>Quizhistorie:</h2>
+<!-- Codeblock für eine Tabelle, welche die Quizhistorie anzeigt. -->
 <table class="table m-5">
   <tr>
     <th>Name</th>

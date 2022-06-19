@@ -17,7 +17,7 @@
         "C":"Virginia",
         "D":"Tennessee",
         "richtigeAntwort":"Tennessee",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -27,7 +27,7 @@
         "C":"Alegraza",
         "D":"Isla de la Toja",
         "richtigeAntwort":"Alegraza",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -37,7 +37,7 @@
         "C":"Berlin - Moskau",
         "D":"Durban - Antananarivo",
         "richtigeAntwort":"Buenos Aires - Santiago de Chile",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -47,7 +47,7 @@
         "C":"Aserbaidschan",
         "D":"Armenien",
         "richtigeAntwort":"Armenien",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -57,7 +57,7 @@
         "C":"Monrovia",
         "D":"Mombasa",
         "richtigeAntwort":"Mombasa",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -67,7 +67,7 @@
         "C":"7",
         "D":"9",
         "richtigeAntwort":"5",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -77,7 +77,7 @@
         "C":"Ural",
         "D":"Anden",
         "richtigeAntwort":"Ural",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -97,7 +97,7 @@
         "C":"Oman",
         "D":"Vereinigte Arabische Emirate",
         "richtigeAntwort":"Vereinigte Arabische Emirate",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -107,7 +107,7 @@
         "C":"Israel",
         "D":"Jemen",
         "richtigeAntwort":"Israel",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -117,7 +117,7 @@
         "C":"Totes Meer",
         "D":"Mittelmeer",
         "richtigeAntwort":"Mittelmeer",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -137,7 +137,7 @@
         "C":"Melbourne",
         "D":"Quebec",
         "richtigeAntwort":"Canberra",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Geographie",
@@ -147,7 +147,7 @@
         "C":"Antarktis",
         "D":"Nubische Wueste",
         "richtigeAntwort":"Antarktis",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Kunst und Kultur",
@@ -197,7 +197,7 @@
         "C":"Im 18. Jahrhundert",
         "D":"Im 17. bis 18. Jahrhundert",
         "richtigeAntwort":"Im 16. bis 17. Jahrhundert",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Kunst und Kultur",
@@ -227,7 +227,7 @@
         "C":"Gotthold Ephraim Lessing",
         "D":"Heinrich Heine",
         "richtigeAntwort":"Johann Wolfgang von Goethe",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Kunst und Kultur",
@@ -267,7 +267,7 @@
         "C":"Concerthall Ajax in Amsterdam",
         "D":"Filarmonica AC in Milano",
         "richtigeAntwort":"Teatro Real in Madrid",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Kunst und Kultur",
@@ -287,7 +287,7 @@
         "C":"A del Ludovico",
         "D":"A del Sforza",
         "richtigeAntwort":"A del Verrocchios",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Kunst und Kultur",
@@ -427,7 +427,7 @@
         "C":"Sarah Jessica Parker",
         "D":"Charlie Sheen",
         "richtigeAntwort":"Tom Selleck",
-        "punkte":0
+        "punkte":1
     },
     {
         "Kategorie":"Buecher, Filme und Serien",

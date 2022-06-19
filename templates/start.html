@@ -1,4 +1,4 @@
-<!-- html Seite für die Startseite, wo man Nutzernamen und Kategorie auswählt. -->
+<!-- html Seite für die Startseite, wo man Nutzernamen und Kategorie auswählt. Anschliessend kann man das Quiz beginnen -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +15,7 @@
     <!-- Ein Feld, wo man seinen Namen eingeben muss, damit man nachher die Resultate vergleichen kann -->
     <h2>Gib deinen Nutzernamen fürs Quiz an.</h2>
     <br/>
+    <!-- Code vom Username-Feld von Bootstrap.com kopiert -->
     <form method="POST">
     <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping">@</span>
@@ -22,17 +23,17 @@
     </div>
     <br/> <br/>
 
-    <!-- Knöpf, mit denen man Kategorie auswählt. Wenn einer gedrückt wird, wird das Spiel gestartet. -->
     <h2>Wähle eine Kategorie aus und starte das Spiel.</h2>
     <br/> <br/>
-
+<!-- Dropdown Feld für die Kategorie Auswahl. Code von Bootstrap.com kopiert -->
     <div class="form-group">
         <label for="kategorie">Kategorie auswählen:</label>
         <select name="kategorie" id="kategorie">
             <option>Geographie</option>
             <option>Kunst und Kultur</option>
-            <option>Bücher, Filme und Serien</option>
+            <option>Buecher, Filme und Serien</option>
         </select>
+        <!-- Knöpfe, welche die Kategorie Auswahl und username übernimmt. Das Quiz wird mit diesen Informationen gestartet -->
         <button type="submit">Kategorie auswählen</button>
         <a class="btn btn-primary" href="{{ url_for('quiz') }}" role="button">Quiz starten</a>
 

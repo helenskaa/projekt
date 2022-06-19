@@ -6,12 +6,13 @@ import json
 
 app = Flask("Quiz")
 
+# Home Seite mit Verlinkung zur Startseite
 @app.route("/")
 def home():
     start_link = url_for("start")
     return render_template("index.html", link=start_link)
 
-
+# Startseite mit Verbindung zur Quizhistorie, damit die Daten bei der Ausführung dort übernommen werden
 @app.route("/start", methods=["GET", "POST"])
 def start():
     try:
@@ -20,10 +21,11 @@ def start():
     except FileNotFoundError:
         quizhistorie = []
 
-# Kategorie Auswahl erstellt, global damit die Variable auf allen Seiten funktioniert.
+# Kategorie Auswahl erstellt, 'global' damit die Variable 'kategorie_input' auf allen Seiten funktioniert.
     if request.method == "POST":
         global kategorie_input
         kategorie_input = request.form["kategorie"]
+        # Bei der Quizhistorie werden bei der Ausführung der Name, Kategorie und die erreichte Punkte übertragen
         quizhistorie.append({"Name": request.form["benutzername"], "Kategorie": kategorie_input, "Punkte": 0})
 
     with open("quizhistorie.json", "w") as d:
@@ -31,6 +33,7 @@ def start():
 
     return render_template("start.html")
 
+# Quizseite, die Fragen werden von der datenbank.json übernommen
 @app.route("/quiz", methods=["GET", "POST"])
 def quiz():
     liste_fragen = []
@@ -45,24 +48,26 @@ def quiz():
         if element["Kategorie"] == kategorie_input:
             liste_fragen.append([element["Frage"], element["A"], element["B"], element["C"], element["D"]])
 
-# Wenn Frage richtig beantwortet wurde, wird ein Punkt hinzugefügt. POST --> Wenn Knopf 'Antworten eintragen' gedrückt wird am Ende des Quiz
+# Wenn Frage richtig beantwortet wurde, wird ein Punkt hinzugefügt.
+    # POST --> Wenn Knopf 'Antworten eintragen' gedrückt wird am Ende des Quiz
     if request.method == "POST":
         for element in quizdatenbank:
             if element["Kategorie"] == kategorie_input:
-                if request.form[element["Frage"]] == element["richtigeAntwort"]:                    element["punkte"] = 1
+                if request.form[element["Frage"]] == element["richtigeAntwort"]:
+                    element["punkte"] = 1
 
     with open("datenbank.json", "w") as d:
         json.dump(quizdatenbank, d, indent=4, separators=(",", ":"))
 
-    return render_template("quiz.html", liste_fragen=liste_fragen)
+    return render_template("quiz.html", liste_fragen=liste_fragen, kategorie=kategorie_input)
 
+# Auswertungsseite: Punkte, Maximalpunkte und die Fragen werden angezeigt
 @app.route("/auswertung", methods=["GET", "POST"])
 def auswertung():
     punkte = 0
     maximalpunkte = 0
     richtige_fragen = []
     falsche_fragen = []
-    liste_auswertung = []
     quizhistorie_html = []
     try:
         q = open("datenbank.json")
@@ -76,7 +81,7 @@ def auswertung():
     except FileNotFoundError:
         quizhistorie = []
 
-    # Wenn Frage richtig beantwortet wurde, wird es in der Liste richtige_fragen angezeigt und wenn falsch wird es der falsche_fragen Liste hinzugefügt
+    # Fragen, richtige Antwort werden der zugehörigen Liste hinzugefügt und Punkte zusammengerechnet
     for element in quizdatenbank:
         if element["Kategorie"] == kategorie_input:
             punkte = punkte + element["punkte"]
@@ -86,8 +91,10 @@ def auswertung():
                 falsche_fragen.append([element["Frage"], element["richtigeAntwort"]])
             maximalpunkte = maximalpunkte + 1
 
+    #Holt letztes Element von JSON, habe ich von https://www.autoscripts.net/get-last-element-of-dictionary-python/
     quizhistorie[-1]["Punkte"] = punkte
 
+# Name, Kategorie und Punkte werden bei der Quizhistorie hinzugefügt
     for element in quizhistorie:
         quizhistorie_html.append([element["Name"], element["Kategorie"], element["Punkte"]])
 

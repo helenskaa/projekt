@@ -1,10 +1,10 @@
-<!-- html Seite um die Kunst-Kultur Quiz Seite zu gestalten. -->
+<!-- html Seite um die Quiz Seite zu gestalten. -->
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Geographie Quiz</title>
+    <title>Quiz</title>
 </head>
 
 {% extends 'basis.html' %}
@@ -14,17 +14,22 @@
 <body>
 <h1>{{ kategorie }}</h1>
 <form method="POST">
+<!-- for loop in jinja von https://stackoverflow.com/questions/29706099/how-to-make-a-for-loop-in-jinja -->
 {% for element in liste_fragen %}
 <label for="{{ element[0] }}">{{ element[0] }}</label>
         <select name="{{ element[0]}}" id="{{ element[0] }}">
+            <!-- Antwortmöglichkeiten der Fragen -->
             <option>{{ element[1] }}</option>
             <option>{{ element[2] }}</option>
             <option>{{ element[3] }}</option>
             <option>{{ element[4] }}</option>
         </select> <br><br>
 {% endfor %}
+    <!-- Knopf Antwort eintragen, damit die Daten für die Auswertung übernommen werden. -->
 <button type="submit">Antworten eintragen</button>
 </form>
+<br>
+<!-- Knopf, der auf die Auswertung Seite weiterleitet. -->
 <a href="{{ url_for('auswertung') }}" class="btn btn-primary">Auswertung anzeigen</a>
 </body>
 
