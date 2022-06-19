@@ -6,13 +6,13 @@
 <h3>Projektbeschreibung</h3>
 <p>Bei diesem Spiel gibt es drei verschiedene Kategorien. Ich habe mich für 'Geographie', 'Kunst-Kultur', 'Bücher, Filme & TV-Serien' entschieden. Bei jeder Frage gibt es vier Antwortmöglichkeiten, bei der es eine richtige Antwort gibt. Wenn man seinen Username und die gewünschte Kategorie ausgewählt hat, kann man das Quiz starten. Alle Fragen werden auf einer Seite angezeigt und rechts davon gibt es ein Dropdown Feld. Bei diesem werden die vier Antwortmöglichkeiten angezeigt und man kann eine Antwort auswählen. Wenn man alle Fragen durchgearbeitet hat, kann man auf "Antworten eintragen" drücken und danach "Auswertung anzeigen". Ich habe die Auswertung so strukturiert, dass die Punktezahl oben steht. Unten werden die Fragen angezeigt, die richtig beantwortet wurden. Und folgend werden alle Fragen angezeigt, welche man falsch beantwortet hat. Dazu werden noch die richtigen Antworten unten angezeigt. Wenn man ein neues Quiz beginnen möchte, kann man auf "alle Daten zurücksetzen" klicken und danach "quiz neu starten". Zu unterst auf der Seite habe ich noch eine Tabelle eingebaut, wo der Username des Spielers angezeigt wird, sowie die ausgewählte Kategorie und die erreichte Punktezahl.</p>
 
-<h3>Betrieb</h3>
+<h3>Betrieb/Benutzung</h3>
 <h5>- Welche zussätzliche Pakete müssen bei Bedarf installiert werden, was muss man bei der Ausführung beachten, was muss eventuell davor noch gemacht werden und welche Datei muss ausgeführt werden.</h5>
-<p>Noch ausfüllen </p>
-
-<h3>Benutzung</h3>
-<h5>- Wie wird das Projekt benutzt, welche Optionen oder auch spezialitäten existieren?</h5>
-<p>Noch ausfüllen</p>
+<p>Ich habe neben Flask noch json importiert.</p>
+<p>from flask import Flask</p>
+<p>from flask import render_template</p>
+<p>from flask import url_for, request</p> 
+<p>import json</p>
 
 <h3>Architektur</h3>
 <h5>- Hier bei Bedarf eine kurze Beschreibung des Ablaufs des Programms auf Code Ebene z.B. als Ablaufdiagramm.</h5>
